@@ -12,26 +12,14 @@ Week-14 Challenge (Model-View-Controller)
 - [Live-URL](#live-url)
 
 - [Live-Screen-Recording-of-Application-Functionality](#live-screen-recording-of-application-functionality)
-
-- [Screenshots](#screenshots)
-
+  
 - [Technologies-Used](#technologies-used)
 
 - [Installation](#installation)
 
-- [Credits](#credits)
-
 - [Features](#features)
 
 - [Usage-Information](#usage-information)
-
-- [Suggested-Future-Development](#suggested-future-development)
-
-- [Contribution-Guidelines](#contribution-guidelines)
-
-- [Test-Instructions](#test-instructions)
-
-- [License](#license)
 
 - [Questions](#questions)
 
@@ -43,25 +31,7 @@ This project implements a model-view-control (MVC) specific set up, uses the obj
 
 Challenges faced when creating this application were the use of the handlebars template engine. This was my first time using one, and it took quite a bit of tinkering to find the best way to give certain partials access to the data I wanted to pass to the page. I also still struggle a bit with routing, and middleware in regards to the syntax used. This was the first full-stack web application I have built, so there was definitely a few times where I felt overwhelmed with the amount of files I was needing to comb through, however I eventually did get the feel for how all the different parts connected resulting in the completed application!
 
-## Live URL
-
-https://mvc-tech-blog15.herokuapp.com/
-
 ## Live Screen Recording of Application Functionality
-
-https://drive.google.com/file/d/1cBZTOKL3T1VV4NQSmrrQKnCZvbiZaKwQ/view
-
-## Screenshots
-
-![Screenshot1-week-14-challenge](https://github.com/rmessett15/MVC-Tech-Blog/assets/120127903/d3b4e9c7-44ae-49e7-a2b8-9cf210875a6f)
-
-![Screenshot2-week-14-challenge](https://github.com/rmessett15/MVC-Tech-Blog/assets/120127903/906aa42d-7628-4282-b39d-d5272f2953f5)
-
-![Screenshot3-week-14-challenge](https://github.com/rmessett15/MVC-Tech-Blog/assets/120127903/64582c7b-acf0-411f-bdf7-36925d18ee34)
-
-![Screenshot4-week-14-challenge](https://github.com/rmessett15/MVC-Tech-Blog/assets/120127903/a47f326c-1ca0-45f3-99f2-6ae1d42a77b8)
-
-![Screenshot5-week-14-challenge](https://github.com/rmessett15/MVC-Tech-Blog/assets/120127903/9cb35897-0e31-47b2-9d58-dcdf3150cc19)
 
 ## Technologies Used
 
@@ -119,10 +89,6 @@ This application is powered by Node.js (v16.19.1), Express.js (v.14.18.2), JavaS
 
 12. From there, you can utilize applications such as Insomnia to test the functionality of the routes within the program and make edits to both the front-end and back-end of the code base.
 
-## Credits
-
-Much of this application code followed outline code within the week-14 mini project, as well as the code my team wrote while working on project-2. I also collaborated with a tutor (Joem Casusi), the class TAs (Mark Alfano & Jennifer Trevisoto), and the class instructor (Jonathan Dionne) to correct some of the final errors I was running into regarding the edit/delete functionality of blog posts, and session cookie set up.
-
 ## Features
 
 Features of this application include the users ability to create an account, where their login info will be hashed and saved to a database and validated at a later login with session storage. Visitors of the site will be able to see the homepage or public feed without needing to create an account, however will be prompted to set up an account when trying to access specific blogs or when trying to create posts. Once an account has been created the site features access to the dashboard page which gives users space to store their own created content, interact with other users posts (i.e. leave comments), and edit and delete their own posts. 
@@ -130,22 +96,6 @@ Features of this application include the users ability to create an account, whe
 ## Usage Information
 
 Usage of this application is very intuitive. Users will interact with the site completely through the frontend UI. They will see a public facing feed, and a login button where they will be prompted to either login or create an account. From there navigation of the entire application can be conducted, and users can contribute and start creating content instantly.
-
-## Suggested Future Development
-
-- Dark Mode Toggle
-- Continued display and UI development
-- Ability to like and up-vote posts
-- Functionality allowing users to favorite specific content
-- Addition of a friends feature
-- Continued user authentication -> only allowing author of the post access to the edit and delete feature
-- Including unit testing
-
-## Contribution Guidelines
-
-Open to collaboration, if you choose to do so open an issue and modify any changes you would like to see on a feature branch and wait for approval before merging to the main branch.
-
-NOTICE: Contributor Covenant is released under the Creative Commons Attribution 4.0 International Public License, which requires that attribution be included.
 
 ## Test Instructions
 
@@ -155,10 +105,3 @@ There is currently no unit testing written yet for this application.
 
 NOTICE: This application is covered under the MIT License
 
-## Questions
-
-Have additional questions? Click the links below to reach me through my GitHub account or Email address.
-
-[Link to Github](https://github.com/rmessett15)
-
-<a href="mailto:rmessett15@gmail.com">rmessett15@gmail.com</a>
