@@ -5,13 +5,13 @@ header {
   }
   
   body {
-    background-color: #a28089;
+    background-color: lightblue;
   }
   
   h1 {
     font-family: "Jomolhari", serif;
     background-color: teal;
-    color: #ffb3c6;
+    color: black;
     padding: 16px;
     margin-bottom: 5px;
   }
@@ -23,7 +23,7 @@ header {
   main {
     font-family: "Jomolhari", serif;
     margin-top: -5px;
-    background-color: #a28089;
+    background-color: lightblue;
   }
   
   .homepage-main {
@@ -31,7 +31,7 @@ header {
   }
   
   .user-name {
-    background-color: #84a59d;
+    background-color: black;
   }
   
   .blogPost-main {
@@ -45,7 +45,7 @@ header {
   }
   
   #logout {
-    background-color: #84a59d;
+    background-color: black;
   }
   
   /* Input/textarea styles */
