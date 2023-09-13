@@ -1,4 +1,5 @@
-//imports
+require('dotenv').config();
+
 const path = require("path");
 const express = require("express");
 const session = require("express-session");
@@ -8,8 +9,6 @@ const helpers = require("./utils/helpers");
 
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
-
-const baseUrl = process.env.BASE_URL || '';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
