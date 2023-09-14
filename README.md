@@ -10,8 +10,6 @@ Week-14 Challenge (Model-View-Controller)
 - [Description](#description)
 
 - [Live-URL](#live-url)
-
-- [Live-Screen-Recording-of-Application-Functionality](#live-screen-recording-of-application-functionality)
   
 - [Technologies-Used](#technologies-used)
 
@@ -31,7 +29,8 @@ This project implements a model-view-control (MVC) specific set up, uses the obj
 
 Challenges faced when creating this application were the use of the handlebars template engine. This was my first time using one, and it took quite a bit of tinkering to find the best way to give certain partials access to the data I wanted to pass to the page. I also still struggle a bit with routing, and middleware in regards to the syntax used. This was the first full-stack web application I have built, so there was definitely a few times where I felt overwhelmed with the amount of files I was needing to comb through, however I eventually did get the feel for how all the different parts connected resulting in the completed application!
 
-## Live Screen Recording of Application Functionality
+## Live URL
+https://tech-blog-carolyn-5601a2ad3048.herokuapp.com/
 
 ## Technologies Used
 
@@ -50,52 +49,46 @@ This application is powered by Node.js (v16.19.1), Express.js (v.14.18.2), JavaS
 
 ## Installation
 
-1. Clone the repo:
-   git clone https://github.com/rmessett15/MVC-Tech-Blog.git
+1. Clone the Repository: Start by cloning the repository. Use the following command to do so: git clone (repository URL).
 
-2. Open in VS Code. If you do not have VS code you must install it.
+2. Open in Visual Studio Code: If you don't already have Visual Studio Code installed, make sure to install it. You'll need it for the next steps.
 
-3. Using the terminal, install node.js v16. If you have homebrew, the command should look like the following (brew install node@16), however this may vary and the documentation should be consulted.
+3. Install Node.js (Version 16): Ensure you have Node.js version 16 installed. If you have Homebrew, you can use this command: brew install node@16.
 
-4. Once node.js v16 is installed, in the terminal, utilize the command npm init -y to initialize and create a package.json where project files will be stored.
+4. Initialize Package.json: In your terminal, run npm init -y to create a package.json file for managing your project's dependencies.
 
-5. Next, use the terminal to run the command npm i to install the dependencies associated with this application (developers may need to install dependencies directly from the command line).
+5. Install Dependencies: Use npm i to install the project dependencies. Here are the individual commands for each dependency:
 
-   Commands to install each dependency:
+Sequelize: npm i sequelize
+MySQL2: npm i mysql2
+Express: npm i express@4.18.2
+dotenv: npm i dotenv
+Nodemon: npm i nodemon
+Bcrypt: npm i bcrypt
+Bootstrap: npm i bootstrap
+connect-session-sequelize: npm i connect-session-sequelize
+Express Handlebars: npm i express-handlebars
+Express Session: npm i express-session
+Jest: npm i jest
+Create .env File: Make sure you have a .env file in your repository's root directory. Inside this file, provide your environmental variables, including the database name, MySQL username, and MySQL password.
 
-   - Command for sequelize will be npm i sequelize
-   - Command for mysql2 will be npm i mysql2
-   - Command for express will be npm i express@4.18.2
-   - Command for dotenv will be npm i dotenv
-   - Command for nodemon will be npm i nodemon
-   - Command for bcrypt will be npm i bcrypt
-   - Command for bootstrap will be npm i bootstrap
-   - Command for connect-session-sequelize will be npm i connect-session-sequelize
-   - Command for express-handlebars will be npm i express-handlebars
-   - Command for express-session will be npm i express-session
-   - Command for jest will be npm i jest
+6. MySQL Account: If you don't have a MySQL account, you can create one by following the instructions at https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/.
 
-6. Next, you will need to make sure you have an added .env file within the root directory of your repository, within which you will pass your environmental variables specifying the database name, your MySQL username, and your MySQL password. This will need to be completed before running the application, and will allow the connection.js file to utilize your environmental variables keeping your sensitive information protected.
+7. Database Creation: After installing dependencies, create the database. Navigate to the db directory that contains the schema.sql file. Open a MySQL shell with the command mysql -u root -p. You'll be prompted to enter your password. Once in the MySQL shell, run source schema.sql to create the database.
 
-7. If you do not have a MySQL account, you will need to create one (see https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/).
+8. Database Seeding: Seed the database to create the table structures. Go back to the root directory and run npm run seed. This should be done from the root directory since the .env file is located there.
 
-8. Once all dependencies are installed, you will need to create the database. To do this you will need to navigate to the directory db directory containing the schema.sql file. Once there, you will need to open up a MySQL shell using the command mysql -u root -p, where you will then be prompted to enter you password. Once your password is entered you will be in the MySQL shell.
+9. Start the Server: After seeding the database, you can start the server by running npm start from the root directory. If you have Nodemon installed, you can use npm run watch to automatically restart the server during code edits.
 
-9. Once in the MySQL shell you will then run the command source schema.sql. This will create the database.
-
-10. Once the database has been created, you will then need to seed the database (this will also create the model structure for the tables within the database). To do this, navigate to the root directory and run the command npm run seed. This needs to be done from the root directory because the .env file lives within the root.
-
-11. Once the database has been seeded, you will then be able to run the command npm start from the root directory to spin up the server. With nodemon installed, you will also be able to utilize the command npm run watch to keep the server spun up between code edits.
-
-12. From there, you can utilize applications such as Insomnia to test the functionality of the routes within the program and make edits to both the front-end and back-end of the code base.
+10. Testing and Edits: Use tools like Insomnia to test your routes and make changes to both the front-end and back-end of your codebase as needed.
 
 ## Features
 
-Features of this application include the users ability to create an account, where their login info will be hashed and saved to a database and validated at a later login with session storage. Visitors of the site will be able to see the homepage or public feed without needing to create an account, however will be prompted to set up an account when trying to access specific blogs or when trying to create posts. Once an account has been created the site features access to the dashboard page which gives users space to store their own created content, interact with other users posts (i.e. leave comments), and edit and delete their own posts. 
+This application offers a user-friendly experience with several noteworthy features. Users can create accounts securely, with their login information being hashed and stored for future validation. Visitors enjoy unrestricted access to the homepage and public feed but are prompted to create accounts when trying to access specific blogs or create posts. Once registered, users gain access to a dashboard where they can conveniently store their own content, engage with other users' posts by leaving comments, and maintain control over their posts with editing and deletion capabilities. This blend of user registration, personalized spaces, and interaction fosters an engaging and dynamic environment for both new and returning users.
 
 ## Usage Information
 
-Usage of this application is very intuitive. Users will interact with the site completely through the frontend UI. They will see a public facing feed, and a login button where they will be prompted to either login or create an account. From there navigation of the entire application can be conducted, and users can contribute and start creating content instantly.
+Using this application is an intuitive experience, primarily conducted through the frontend user interface. Upon visiting the site, users encounter a public-facing feed and a prominent login button that guides them to either log in or create a new account seamlessly. Once logged in, users have full access to the application's features, enabling them to navigate, contribute, and start creating content effortlessly. This straightforward approach ensures a user-friendly experience for anyone interacting with the platform.
 
 ## Test Instructions
 
